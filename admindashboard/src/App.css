@@ -1,0 +1,433 @@
+.App {
+  font-family: 'Allura', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  color: var(--color-font)
+}
+/* body{
+  overflow-x: hidden;
+  color: var(--color-font)
+} */
+
+
+/* *************fonts**************** */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@100;200;300;400;600;700&family=Source+Sans+3:wght@200;300;400;500;600;700&display=swap');
+
+/* *************Variables************** */
+#light{
+  --background-color:#f6f6f9;
+  --background-main:#D0A2F7;
+  --color-font:#363949;
+  --color-white: #fff;
+  --color-light: rgba(0, 0, 0, 0.2);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+#dark{
+  --background-color:#181a1e;
+  --background-main:#D0A2F7;
+  --color-font:#edeffd;
+  --color-white: #202528;
+  --color-light: rgba(0, 0, 0, 0.2);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* ******************Here sidebar css****** */
+.sidebar a{
+  text-decoration: none;
+ color: var(--color-font);
+ display: flex;
+ align-items: center;
+ height: 3.7rem;
+ gap: 1rem;
+ position: relative;
+ margin-left: 2rem;
+ transition: all 0.3s ease;
+
+}
+.sidebar{
+  width: 14%;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  background-color:var(--color-white) ;
+  box-shadow: var(--box-shadow);
+  height: 90vh;
+  border-radius: 15px;
+  /* position: relative;
+  top:1.5rem; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sidebar:hover{
+  box-shadow: none;
+}
+.sidebar a:hover{
+  margin-left: 45px;
+}
+.sidebar a h3:hover{
+  color: #B931FC;
+  font-weight:700;
+}
+.logout-btn{
+  display: flex;
+  width: 120px;
+  margin-left: 1.5rem;
+  margin-top: 4.5rem;
+  justify-content: center;
+  flex-direction: row;
+  height: 2.7rem;
+  gap: 10px;
+  /* background-color: #61dafb; */
+}
+
+/* ***********main-content******************* */
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  /* height: 100vh; */
+  /* background-color: #61dafb; */
+}
+.analytics-score{
+  display: grid;
+  /* align-items: center; */
+  /* align-items: center; */
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 23%;
+  /* background-color: #61dafb; */
+}
+.sales{
+  width: 300px;
+  margin-left: 0.5rem;
+  border-radius: 15px;
+  height: 17vh;
+  background-color:var(--color-white);
+  /* box-shadow:0 0.5rem 1rem var(--color-light); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+.sales:hover {
+ 
+  box-shadow: 0 1rem 2rem  rgba(0, 0, 0, 0.2);
+}
+.new-users{
+  margin-left: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* background-color: #61dafb; */
+  height:30%;
+}
+.new-users h4{
+  height: 15%;
+}
+
+.users-logo{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+  height: 85%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color:var(--color-white);
+  border-radius: 15px;
+}
+.recent-orders{
+  /* background-color:var(--color-white);
+   */
+  /* background-color: #61dafb; */
+  display: flex;
+  margin-top: 10px;
+  margin-left: 1rem;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 45%;
+}
+.order-list{
+  display: flex;
+  /* justify-content: center; */
+  border-radius: 15px;
+  width: 97%;
+  height: 90%;
+  background-color: var(--color-white);
+}
+.order-list table {
+  margin-left: 12px;
+  font-size: 17px;
+  border-collapse: collapse;
+  width: 90%;
+  height: 90%;
+}
+.order-list td, th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding: 0px;
+}
+
+/* .order-list tr:nth-child(even) {
+  /* background-color: #dddddd; */
+/* }  */
+
+.credited{
+  color: green;
+}
+.pennding{
+  color:orange;
+}
+
+/* ******************About css************** */
+.about-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 21%;
+  height: 100%;
+  /* background-color: #61dafb; */
+}
+.about-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 97%;
+  height:40%;
+  background-color: var(--color-white);
+  box-shadow: 0 0.5rem 0.5rem  rgba(0, 0, 0, 0.2);
+}
+.about-logo:hover{
+  box-shadow: none;
+}
+.about-img{
+  background-image: url("../src/img/logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 180px;
+  height: 65%;
+  border-radius: 100%;
+  /* background-color: #61dafb; */
+}
+.about-reminders{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* background-color: #61dafb; */
+  width: 100%;
+  height: 60%;
+}
+.reminders-row{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  /* background-color: #D0A2F7; */
+  height: 90%;
+}
+.record{
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  height: 19%;
+  background-color:var(--color-white);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 15px;
+}
+.border-dot{
+  border: 2px solid var(--color-font);
+  border-style:dashed;
+}
+
+
+
+
+/* **********Here***************** */
+.container{
+  background-color:var(--background-color);
+  width: 100%;
+  height:100vh;
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+  /* background-color: #61dafb; */
+  width: 100%;
+  height: 90%;
+}
+.head-container{
+  display: flex;
+  flex-direction: row;
+  /* gap: 2px; */
+  /* background-color: antiquewhite; */
+  width: 100%;
+  height: 10%;
+}
+.head-logo{
+  font-size:20px;
+  width: 14%;
+  /* background-color: blueviolet; */
+}
+.head-logo aside{
+  font-weight:600;
+  color:violet;
+}
+.head-analytics{
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  /* background-color: yellow; */
+  width: 72%;
+}
+.head-account{
+  width: 14%;
+  /* background-color: violet; */
+}
+.center-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* *************Responsive************* */
+@media screen and (max-width:1400px) {
+  .head-analytics{
+    background-color: #61dafb;
+  }
+
+  .analytics-score{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 50%;
+  }
+  .new-users h4{
+    height: 20%;
+  }
+  .recent-orders h4{
+    height: 18%;
+  }
+}
+@media screen and (max-width:1047px){
+  .main{
+    width: 55%;
+    height: 150vh;
+  }
+  .about-main{
+    /* background-color: #61dafb; */
+    width: 31%;
+  }
+  .about-reminders{
+    margin-left: 10px;
+  }
+  .sales{
+    width: 95%;
+    height: 15vh;
+  }
+  .head-analytics{
+    background-color: #D0A2F7;
+  }
+  .sidebar a h3{
+    display: none;
+  }
+  .sidebar{
+    font-size: 25px;
+  }
+  .analytics-score{
+    /* background-color: #61dafb; */
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  .users-logo{
+    width: 94%;
+    height: 100%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .new-users{
+    height: 45%;
+  }
+  .logout-btn{
+    display: flex;
+    flex-direction: column;
+    margin-left:-1rem;
+    margin-top: none;
+    align-items: center;
+    /* background-color: #61dafb; */
+    /* position: absolute;
+    right: 84%;
+    top: 80%; */
+    /* position: relative;
+    bottom: 150px; */
+    height: 4rem;
+    gap: none;
+  }
+  .logout-btn h3{
+    display: none;
+  }
+  
+}
+@media screen and (max-width:809px) {
+ 
+  
+}
