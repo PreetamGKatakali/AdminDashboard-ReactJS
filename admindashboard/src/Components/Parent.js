@@ -4,10 +4,10 @@ import Sidebar from './Sidebar';
 import Main from './Main';
 import About from './About';
 
-function Parent(){
+function Parent({change}){
     return(
         <div className='container'>
-          <Head/>
+          <Head buton={change}/>
           <div className='main-container'>
             <Sidebar/>
             <Main/>
