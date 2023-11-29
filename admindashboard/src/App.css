@@ -425,6 +425,18 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
+/* **************phot logo************** */
+.photo-logo{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  /* background-color: #B931FC; */
+  background-image: url("../src/img/photo.png");
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size:cover;
+}
+
 /* *************Responsive************* */
 @media screen and (max-width:1400px) {
   .head-analytics{

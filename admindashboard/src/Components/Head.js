@@ -14,7 +14,7 @@ function Head({buton}){
                         <span className="slider round"></span>
                     </label>
                 </div>
-                <h4>account</h4>
+                <div className="photo-logo"></div>
             </div>
         </div>
     )
