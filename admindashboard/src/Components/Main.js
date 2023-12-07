@@ -39,22 +39,22 @@ function Main(){
                   <h4>New Users</h4>
                   <div className="users-logo">
                         <div className="users-info">
-                            <span><FontAwesomeIcon icon={faUser} size="2xl" /></span>
+                            <span><div className="face-img1"></div></span>
                             <h4>Jack</h4>
                             <h5>jack lorem</h5>
                         </div>
-                        <div> 
-                            <span><FontAwesomeIcon icon={faUser} size="2xl" /></span>
+                        <div  className="users-info"> 
+                            <span><div className="face-img2"></div></span>
                             <h4>Jack</h4>
                             <h5>jack lorem</h5>
                         </div>
-                        <div> 
-                            <span><FontAwesomeIcon icon={faUser} size="2xl" /></span>
+                        <div  className="users-info"> 
+                            <span><div className="face-img3"></div></span>
                             <h4>Jack</h4>
                             <h5>jack lorem</h5>
                         </div>
-                        <div> 
-                            <span><FontAwesomeIcon icon={faUser} size="2xl" /></span>
+                        <div  className="users-info"> 
+                            <span><div className="face-img4"></div></span>
                             <h4>Jack</h4>
                             <h5>jack lorem</h5>
                         </div>
